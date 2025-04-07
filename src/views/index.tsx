@@ -1,5 +1,7 @@
 import { lazy } from "react";
 
-export const Dashboard = lazy(() => import("./dashboard-view/index"));
+export const DashboardPanelShifter = lazy(
+  () => import("./dashboard-view/index")
+);
 
-export const View = { Dashboard };
+export const View = { DashboardPanelShifter };

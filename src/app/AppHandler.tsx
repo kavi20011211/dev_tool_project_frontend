@@ -1,4 +1,5 @@
 import Error404 from "@/layout/Error404";
+import Layout from "@/layout/Layout";
 import Loader from "@/layout/Loader";
 import { getAllRoutesV2, routes } from "@/routes";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -8,6 +9,7 @@ const postRoutes = createBrowserRouter([
     path: "/",
     loader: Loader,
     errorElement: <Error404 />,
+    element: <Layout />,
     children: getAllRoutesV2(routes),
   },
 ]);

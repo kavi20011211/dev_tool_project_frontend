@@ -26,7 +26,7 @@ export const routes: RouteObjectDetails[] = [
     path: "/",
     text: "Dashboard",
     icon: React.createElement(LayoutDashboardIcon),
-    element: React.createElement(View.Dashboard),
+    element: React.createElement(View.DashboardPanelShifter),
   },
 ];
 
