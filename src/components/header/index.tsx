@@ -41,7 +41,7 @@ const AppHeader = () => {
           <Menubar>
             <MenubarMenu>
               <MenubarTrigger>Project</MenubarTrigger>
-              <MenubarContent className="cursor-pointer">
+              <MenubarContent className="cursor-pointer bg-accent p-2 rounded-b-sm">
                 {/* <MenubarItem>
                   New Tab <MenubarShortcut>⌘T</MenubarShortcut>
                 </MenubarItem> */}
@@ -86,7 +86,10 @@ const AppHeader = () => {
                 <span className="sr-only">Toggle theme</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="cursor-pointer">
+            <DropdownMenuContent
+              align="end"
+              className="cursor-pointer bg-accent p-2 rounded-b-sm"
+            >
               <DropdownMenuItem onClick={() => setTheme("light")}>
                 Light
               </DropdownMenuItem>
